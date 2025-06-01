@@ -1,0 +1,69 @@
+#myBtnContainer {
+    margin-top: 8px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  overflow: hidden;
+  margin-top: 8px;
+}
+
+.filterDiv {
+  margin-top: 20px;
+  display: none; /* Hidden by default */
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: flex;
+  flex-direction: column;
+  width: 31%;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  margin-top: 4px;
+  cursor: pointer;
+}
+
+/* Add a light grey background on mouse-over */
+.btn:hover {
+  background-color: #ddd;
+}
+
+/* Add a dark background to the active button */
+.btn.active-btn {
+  background-color: #bbb;
+}
+
+.photo-works img {
+    height: 180px;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.title-works {
+    font-weight: 700;
+    margin: 8px 0;
+}
+
+.category-works {
+    color: #999;
+}
+
+/* responsive */
+@media only screen and (max-width: 960px) {
+    .show {
+      width: 100%;
+    }
+
+    .photo-works img {
+      height: 274px;
+    }
+}

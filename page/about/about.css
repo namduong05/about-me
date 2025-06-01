@@ -1,0 +1,140 @@
+.introduce h1, .introduce p {
+    margin-bottom: 12px;
+    line-height: 1.4;
+}
+
+.title-doing {
+    margin: 20px 0;
+}
+
+.doing-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.doing-item {
+    width: 49%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    padding: 36px 20px;
+    margin-bottom: 20px;
+}
+
+.doing-item .title {
+    text-align: center;
+    margin: 12px;
+}
+
+/* evaluate */
+.title-evaluate {
+    margin: 20px 0;
+}
+
+.testimonial-slider {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  background: #f8fbfd;
+  border-radius: 20px;
+  padding: 20px;
+  position: relative;
+}
+
+.testimonial {
+  display: none;
+}
+
+.testimonial.active {
+  display: flex;
+}
+
+.evaluate-desc {
+  margin: 10px 0 0 16px;
+}
+
+.user-name {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 10px;
+  text-align: start;
+}
+
+.content {
+  color: #5a6f85;
+  line-height: 1.6;
+  text-align: start;
+}
+
+.dots {
+  margin-top: 20px;
+}
+
+.dot {
+  height: 12px;
+  width: 12px;
+  margin: 0 5px;
+  background-color: #ccc;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #265ef3;
+}
+
+
+/* cooperate */
+.cooperate-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cooperate-title {
+    margin: 20px 0;
+}
+
+.cooperate-list img {
+  border: 1px solid #ccc;
+}
+
+/* responsive */
+@media only screen and (max-width: 960px) {
+    .cooperate-list {
+      flex-wrap: wrap;
+      gap: 12px;
+  }
+
+  .cooperate-list img {
+    width: 48%;
+  }
+}
+@media only screen and (max-width: 574px) {
+  .doing-item {
+    width: 100%;
+  }
+
+  .testimonial.active {
+    flex-direction: column;
+  }
+
+  .evaluate-desc {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .content {
+    text-align: center;
+  }
+
+  .cooperate-list img {
+    width: 100%;
+  }
+}

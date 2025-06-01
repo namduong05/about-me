@@ -1,0 +1,283 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#main {
+    position: relative;
+}
+
+.header-img {
+    background: url(./img/image_header.jpg) no-repeat;
+    background-size: cover;
+    height: 316px;
+}
+
+.full-info {
+    position: absolute;
+    top: 69px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;  
+    justify-content: center;
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 30px;
+    background-color: #fff;
+    margin-top: 100px;
+    height: 180px;
+    padding: 30px;
+    box-shadow: 0 0 5px #ccc;
+    z-index: 10;
+}
+
+.general-info {
+    display: flex;
+    width: 50%;
+    border-right: 1px solid #ccc;
+    padding-right: 30px;
+}
+
+.avt-info {
+    margin-top: -80px;
+}
+
+.img-avt {
+    border-radius: 30px;
+}
+
+.base-info {
+    width: 100%;
+    margin-left: 16px;
+}
+
+.base-info ul {
+    list-style-type: none;
+    display: flex;
+    gap: 16px;
+}
+
+.desc {
+    margin: 12px 0;
+    font-size: 15px;
+}
+
+.detail-info {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-left: 30px
+}
+
+.email, .phone, .birthday, .address {
+    width: 50%;
+}
+
+.email, .birthday {
+    margin-bottom: 10px;
+}
+
+.label-info {
+    display: block;
+}
+
+/* navbar */
+.navbar-detail {
+    margin:  100px auto 0;
+    display: flex;
+    justify-content: space-around;
+    overflow: visible;
+    width: 90%;
+}
+
+.navbar {
+    width: 12%;
+    height: 100%;
+    border-radius: 30px;
+    box-shadow: 0 0 5px #ccc;
+    position: sticky;
+    top: 16px;
+}
+
+.list-navbar {
+    margin: 14px;
+}
+
+.navbar-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 26px;
+    border-radius: 30px;
+}
+
+.navbar-item i {
+    display: block;
+}
+
+
+
+.navbar-item a, li a {
+    color: black;
+    text-decoration: none;
+}
+
+.icon-navbar {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.label-navbar {
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.navbar-item:hover, .navbar-item a:hover {
+    cursor: pointer;
+    color: #304CFD;
+}
+
+.navbar-item.active {
+    background-image: linear-gradient(142.17deg, #3086FF 6.66%, #304CFD 91.48%);
+    box-shadow: inset -0.25rem -0.25rem 0.3125rem rgba(0, 0, 0, 0.1), inset 0.25rem 0.25rem 0.3125rem rgba(255, 255, 255, 0.23);
+    color: #fff;
+    cursor: pointer;
+}
+/* detail */
+.detail {
+    width: 88%;
+    padding: 30px;
+    height: 100%;
+    box-shadow: 0 0 5px #ccc;
+    margin-left: 40px;
+    border-radius: 30px;
+}
+
+/* footer */
+.footer {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* responsive */
+@media only screen and (max-width: 1060px) {
+    .navbar-item {
+        padding: 20px 26px;
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    .full-info {
+        flex-direction: column;
+        align-items: center;
+        width: 70%;
+        height: 316px;
+    }
+
+    .general-info {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        border-right: none;
+        padding-right: 0;
+        margin-bottom: 16px;
+    }
+
+    .base-info {
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .base-info ul {
+        justify-content: center;
+    }
+
+    .detail-info {
+        padding-left: 0;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding-top: 20px;
+        border-top: 1px solid #ccc;
+    }
+
+    .navbar-detail {
+        margin-top: 235px;
+        flex-direction: column;
+        width: 70%;
+    }
+
+    .navbar {
+        width: 100%;
+        top: 0;
+        margin-bottom: 30px;
+        background-color: #fff;
+        z-index: 10;
+    }
+
+    .list-navbar {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .navbar-item {
+        width: 110px;
+        height: 80px;
+    }
+
+    .label-navbar {
+        font-size: 14px;
+    }
+
+    .detail {
+        width: 100%;
+        padding: 30px;
+        height: 100%;
+        box-shadow: 0 0 5px #ccc;
+        margin-left: 0;
+        border-radius: 30px;
+    }
+}
+
+@media only screen and (max-width: 574px) {
+    .full-info {
+        height: 376px;
+        width: 90%;
+    }
+    
+    .email, .phone, .birthday, .address {
+        width: 100%;
+    }
+
+    .detail-info {
+        padding-top: 12px;
+    }
+
+    .navbar-detail {
+        width: 90%;
+        margin-top: 255px;
+    }
+
+    .navbar {
+        position: fixed;
+        top: 91%;
+        left: 0;
+        border-radius: 0;
+    }
+
+    .list-navbar {
+        margin: 0;
+    }
+
+    .navbar-item {
+        padding: 0;
+        border-radius: 0;
+    }
+
+    .footer {
+        margin-bottom: 500px;
+    }
+}

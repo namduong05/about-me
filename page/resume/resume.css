@@ -1,0 +1,89 @@
+
+.detail-education {
+
+}
+
+.education-title, .experience-title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 12px;
+}
+
+.timeline {
+    margin-top: 20px;
+}
+
+.timeline-item {
+    position: relative;
+    padding: 0 20px;
+    border-left: 1px solid #ccc;
+}
+
+.timeline-item:last-child {
+    border: none;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #2d2dcd;
+    background-color: blue;
+}
+
+.timeline-title {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.timeline-year {
+    color: #aaa;
+    margin: 12px 0;
+}
+
+.timeline-desc {
+    padding-bottom: 20px;
+}
+
+/* skill */
+
+#skills {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 0 0 5px #ccc;
+}
+
+.skill {
+    padding: 12px 0;
+}
+
+.skill span {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+  color: #1a202c;
+}
+.progress-bar {
+  background-color: #f1f5f9;
+  border-radius: 20px;
+  overflow: hidden;
+  height: 20px;
+}
+.progress {
+  height: 100%;
+  width: 0;
+  background: linear-gradient(to right, #2980ff, #3a00e0);
+  color: white;
+  font-size: 14px;
+  text-align: right;
+  padding-right: 10px;
+  line-height: 20px;
+  border-radius: 30px;
+  transition: width 1.5s ease-in-out;
+}
